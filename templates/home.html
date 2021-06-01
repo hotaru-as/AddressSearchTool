@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Address Search</h1>
+<p>郵便番号を入力して「Search」を押すと住所を検索できます。</p>
+
+<div class="numbers">
+  <div class="number">
+    <canvas id="canvas0" class="canvas-item" width="100" height="100"></canvas>
+    <button id="clear0"class="button-item">Clear</button>
+  </div>
+  <div class="number">
+    <canvas id="canvas1" class="canvas-item" width="100" height="100"></canvas>  
+    <button id="clear1" class="button-item">Clear</button>
+  </div>
+  <div class="number">
+    <canvas id="canvas2" class="canvas-item" width="100" height="100"></canvas>  
+    <button id="clear2" class="button-item">Clear</button>
+  </div>
+  <div class="hyphen">
+    <p>-</p>
+  </div>
+  <div class="number">
+    <canvas id="canvas3" class="canvas-item" width="100" height="100"></canvas>  
+    <button id="clear3" class="button-item">Clear</button>
+  </div>
+  <div class="number">
+    <canvas id="canvas4" class="canvas-item" width="100" height="100"></canvas>
+    <button id="clear4" class="button-item">Clear</button>
+  </div>
+  <div class="number">
+    <canvas id="canvas5" class="canvas-item" width="100" height="100"></canvas>  
+    <button id="clear5" class="button-item">Clear</button>
+  </div>
+  <div class="number">
+    <canvas id="canvas6" class="canvas-item" width="100" height="100"></canvas>  
+    <button id="clear6" class="button-item">Clear</button>
+  </div>
+</div>
+
+<button id="search">Search</button>
+
+<div class="show_result">
+  <p id="zip_code"></p>
+  <p id="address"></p>
+  <p id="message"></p>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

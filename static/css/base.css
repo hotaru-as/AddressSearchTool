@@ -1,0 +1,39 @@
+.canvas-item {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.numbers {
+    display: flex;
+}
+
+.hyphen {
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto 0;
+}
+
+.button-item {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.show_result {
+    clear: both;
+    font-size: 20px;
+}
+
+#search {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    margin: 20px 0;
+}
